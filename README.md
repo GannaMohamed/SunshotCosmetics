@@ -1,71 +1,55 @@
-# 🌞 Sunshot Website  
+# 🌞 Sunshot Website
 
-A modern **beauty & skincare brand website** built with **Next.js** and **Tailwind CSS**.  
-This project showcases a full design-to-code workflow, from early design concepts (neobrutalism + minimalism) to a fully responsive implementation.
+**Live Site:** (Link to live deployment here)
 
----
+A modern, high-impact **beauty and skincare brand website** built with **Next.js** and styled using **Tailwind CSS**. This project serves as a full-stack design-to-code case study, translating a bold, graphic design concept into a responsive, performant web application.
 
-## ✨ Vision & Design Process  
+## ✨ The Vision: Neo-Brutalism Meets Minimalism
 
-### 🎨 1. The Design Thinking
-- The brand direction was guided by **neobrutalism minimalism**:
-  - Strong contrasts: clean layouts with **flat sections** divided by bold grid lines.
-  - Minimal shapes & color palette, relying on brand variables (`--navy`, `--red`, `--yellow`, `--offwhite`, `--babyblue`, `--grey`).
-  - Typography as identity: **large headlines**, thin weights for elegance, and capitalized text for impact.  
-- Inspiration: a balance between *modern editorial design* and *raw, grid-based layouts*.
+This project's aesthetic is driven by the **neo-brutalism minimalism** direction of the Sunshot brand:
 
-### 🖌️ 2. From Figma to Code
-- Wireframes and mockups were done in **Figma** with a **12-column grid** as the foundation.
-- Each section (Hero, Collection, Brand Story, Contact, Footer) was carefully mapped into reusable React components.
-- Decisions like hover states (yellow background fill + navy text/border) came from iterating on **interaction micro-designs**.
+* **Grid & Contrast:** The layout is founded on a **12-column grid**, emphasizing strong contrasts. Sections are flat, bold, and cleanly divided by lines and geometric shapes.
+* **Color & Identity:** A restrained palette (`navy`, `red`, `yellow`, `offwhite`, `babyblue`) ensures focus. Typography is the main visual identity: **oversized headlines**, thin weights for elegance, and impactful capitalization.
+* **Interaction:** Micro-designs, like the **signature hover state** (yellow background fill with navy text/border), were essential to making the raw design feel interactive and alive.
 
-### 🪞 3. Components & Reusability
-- **NavItem**: Custom navigation item that handles active/hover states.
-- **Button / ButtonSecondary**: Two button variants with optional icons (`button icon.svg`) and hover transitions.
-- **Badge**: Two types (filled, outlined) for product highlights like *Fresh Arrival*, *Best Seller*, etc.
-- **Title**: Section title with support for repetition (for a strong graphic identity).
-- **Product**: Flex/grid layout alternating between image + details, with row reversal for variety.
+## 🛠️ Tech Stack & Development
 
----
+| Category | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Framework** | **Next.js** | Routing, server-side rendering, and production-ready performance. |
+| **Styling** | **Tailwind CSS** | Utility-first, mobile-first styling for rapid, custom component development. |
+| **Assets** | Next.js `<Image>` | Optimized image handling for fast load times. |
 
-## 🛠️ Development Approach  
+### 📐 Layout & Components
 
-### ⚡ Tech Stack
-- [Next.js](https://nextjs.org/) → React framework for routing, performance, and deployment.
-- [Tailwind CSS](https://tailwindcss.com/) → Utility-first CSS framework for responsive design and custom styling.
-- Next.js `<Image>` for optimized image handling.
+The **12-column grid** from the Figma wireframes is the single source of truth for the entire layout. We used a mix of Tailwind's **Grid** and **Flexbox** utilities to handle complex visual structures, ensuring every element is precisely aligned.
 
-### 📐 Layout System
-- **12-column grid** for consistent spacing and alignment across sections.
-- Flexbox for sub-layouts (hero text, product cards, footer sections).
-- Combined grid + flex to handle **content-heavy + visual sections**.
+**Key Reusable Components:**
+
+* **Button / ButtonSecondary:** Two variants, incorporating optional `button-icon.svg` and defined hover transitions.
+* **Product Card:** Alternating flex/grid layout that supports row reversal, enabling the showcase to feel dynamic without custom styling per item.
+* **Section Title:** Custom component that supports repetition (for a strong graphic effect) and large, impactful sizing.
 
 ### 📱 Responsive Approach
-- **Mobile-first** coding:
-  - Small screens: simplified layout → focus only on essential content centered on screen (hero text, buttons).
-  - Medium and large screens: grid layout → supporting imagery, side elements, decorative icons.
-- Utility classes (`hidden md:flex`, `col-span-*`, `md:flex-row`, etc.) control breakpoints.
-- Hero and Product layouts adapt seamlessly between **stacked** and **split-screen** views.
 
----
+We coded **mobile-first** (`sm:` and `md:` breakpoints). The layout prioritizes essential content (headlines, CTAs) on small screens, hiding decorative or supplementary elements until the larger grid can support them. The Hero and Product sections transition seamlessly from **stacked** to **split-screen** views.
 
-## 🧩 Key Features
-- **Hero Section**: Bold headline with flexible two-button call-to-action.
-- **Collection Section**: Product cards with alternating layouts (image left/right).
-- **Story Section**: Brand logo and narrative text with call-to-action.
-- **Contact Section**: Two-column responsive split with support message and form.
-- **Footer**: Discover / About / Support navigation + social icons + copyright.
+## 🧩 Core Features Implemented
 
----
+* **Hero:** Bold, brand-defining headline with a dual-CTA (Call-to-Action) button setup.
+* **Collection:** A structured product showcase alternating between image-left and image-right layouts.
+* **Brand Story:** Dedicated section for the narrative text and a primary CTA.
+* **Contact Form:** Responsive two-column split design with form fields and a support message.
+* **Footer:** Clear, multi-column navigation (`Discover`, `Support`) integrated with social links and copyright.
 
+## 🔮 Future Roadmap
 
-## 🔮 Future Enhancements
-- Implement the two other pages, About and Contact.
-- Add interactions & animations.
-- Arabic Version.
+* Implement full content for the **About Us** and **Contact** pages.
+* Integrate subtle interaction and entrance animations.
+* Complete the **Modern Standard Arabic** version for full bilingual support.
 
 ---
 
 ## 📷 Preview
-*(Include a screenshot of the landing page here once deployed)*
 
+(Include a screenshot of the landing page here once deployed)
