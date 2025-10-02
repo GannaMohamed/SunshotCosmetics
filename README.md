@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌞 Sunshot Website  
 
-## Getting Started
+A modern **beauty & skincare brand website** built with **Next.js** and **Tailwind CSS**.  
+This project showcases a full design-to-code workflow, from early design concepts (neobrutalism + minimalism) to a fully responsive implementation.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Vision & Design Process  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🎨 1. The Design Thinking
+- The brand direction was guided by **neobrutalism minimalism**:
+  - Strong contrasts: clean layouts with **flat sections** divided by bold grid lines.
+  - Minimal shapes & color palette, relying on brand variables (`--navy`, `--red`, `--yellow`, `--offwhite`, `--babyblue`, `--grey`).
+  - Typography as identity: **large headlines**, thin weights for elegance, and capitalized text for impact.  
+- Inspiration: a balance between *modern editorial design* and *raw, grid-based layouts*.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🖌️ 2. From Figma to Code
+- Wireframes and mockups were done in **Figma** with a **12-column grid** as the foundation.
+- Each section (Hero, Collection, Brand Story, Contact, Footer) was carefully mapped into reusable React components.
+- Decisions like hover states (yellow background fill + navy text/border) came from iterating on **interaction micro-designs**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🪞 3. Components & Reusability
+- **NavItem**: Custom navigation item that handles active/hover states.
+- **Button / ButtonSecondary**: Two button variants with optional icons (`button icon.svg`) and hover transitions.
+- **Badge**: Two types (filled, outlined) for product highlights like *Fresh Arrival*, *Best Seller*, etc.
+- **Title**: Section title with support for repetition (for a strong graphic identity).
+- **Product**: Flex/grid layout alternating between image + details, with row reversal for variety.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Development Approach  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### ⚡ Tech Stack
+- [Next.js](https://nextjs.org/) → React framework for routing, performance, and deployment.
+- [Tailwind CSS](https://tailwindcss.com/) → Utility-first CSS framework for responsive design and custom styling.
+- Next.js `<Image>` for optimized image handling.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📐 Layout System
+- **12-column grid** for consistent spacing and alignment across sections.
+- Flexbox for sub-layouts (hero text, product cards, footer sections).
+- Combined grid + flex to handle **content-heavy + visual sections**.
 
-## Deploy on Vercel
+### 📱 Responsive Approach
+- **Mobile-first** coding:
+  - Small screens: simplified layout → focus only on essential content centered on screen (hero text, buttons).
+  - Medium and large screens: grid layout → supporting imagery, side elements, decorative icons.
+- Utility classes (`hidden md:flex`, `col-span-*`, `md:flex-row`, etc.) control breakpoints.
+- Hero and Product layouts adapt seamlessly between **stacked** and **split-screen** views.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧩 Key Features
+- **Hero Section**: Bold headline with flexible two-button call-to-action.
+- **Collection Section**: Product cards with alternating layouts (image left/right).
+- **Story Section**: Brand logo and narrative text with call-to-action.
+- **Contact Section**: Two-column responsive split with support message and form.
+- **Footer**: Discover / About / Support navigation + social icons + copyright.
+
+---
+
+
+## 🔮 Future Enhancements
+- Implement the two other pages, About and Contact.
+- Add interactions & animations.
+- Arabic Version.
+
+---
+
+## 📷 Preview
+*(Include a screenshot of the landing page here once deployed)*
+
