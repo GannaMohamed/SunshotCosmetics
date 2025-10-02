@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --offwhite: #F0F1F7;
+  --tar: #1e2021;
+  --grey: #C9C8C3;
+  --navy: #0E195B;
+  --babyblue: #87D9F5;
+  --red: #C63A1E;
+  --yellow: #FFCA5F;
+  --bluefilter: brightness(0) saturate(100%) invert(10%) sepia(24%) saturate(7304%) hue-rotate(225deg) brightness(96%) contrast(106%);
+
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--tar);
+  --color-foreground: var(--offwhite);
+  --font-outfit: var(--font-outfit);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--offwhite);
+  color: var(--tar);
+}
+
+/* DESIGN SYSTEM */
+strong {
+  font-weight: 300 !important;
+}
+button:hover .buttonIcon {
+  filter: var(--bluefilter);
+}
+.lined {
+  outline: 0.5px solid var(--tar);  outline-offset: -1px;
+}
+.linedLeft {
+  border-left: 0.5px solid var(--tar); 
+}
+/* .herogrid > * {
+
+} */
+.bluefilter {
+  filter: var(--bluefilter);
+}
+.active {
+  color: #0E195B;
+}
+.OutlinedBadge > * {
+filter: brightness(0) saturate(100%) invert(92%) sepia(48%) saturate(1975%) hue-rotate(311deg) brightness(102%) contrast(105%);
+
+}
+.FilledBadge > * {
+  filter: brightness(0) saturate(100%) invert(8%) sepia(16%) saturate(762%) hue-rotate(164deg) brightness(93%) contrast(93%);
+}
+.socialmediaIcon:hover {
+filter: brightness(0) saturate(100%) invert(81%) sepia(6%) saturate(3929%) hue-rotate(168deg) brightness(104%) contrast(92%);
 }
