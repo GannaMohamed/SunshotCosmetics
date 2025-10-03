@@ -38,5 +38,7 @@ Built on a **12-column grid** foundation. Components are highly reusable and mob
 ---
 
 ## 📷 Preview
+<img width="1462" height="851" alt="image" src="https://github.com/user-attachments/assets/00bdee55-aeba-4694-89d9-7e44e742068f" />
 
-(Screenshot placeholder)
+<img width="1462" height="853" alt="image" src="https://github.com/user-attachments/assets/42e6e743-520a-4a48-9f55-41aaf592d519" />
+
