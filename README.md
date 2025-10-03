@@ -6,9 +6,15 @@
 
 The core aesthetic is **strong contrast** and **clean structure** based on a **12-column grid**.
 
-* **Identity:** Typography is the main visual element (large, bold headlines).
-* **Color:** A restrained palette (`navy`, `yellow`, `red`, etc.) defines sections.
-* **Interaction:** Features a signature hover state (yellow fill, navy border) for interactivity.
+* **Grid**: Built on a 12-column grid for consistency and clarity, and 8-point grid system for spaces, typography, sizes.
+
+* **Identity**: Bold typography as the main visual element.
+
+* **Color Palette**: Navy, baby blue, yellow, red, black, and grey — balanced contrast with restraint.
+
+* **Interaction**: Hover states with yellow fill + navy border for vibrancy.
+
+* **Layout Style**: Neo-brutalist influence with vibrant colors, sharp typography, light black borders, generous whitespace, and slim buttons for a refined, modern feel.
 
 ## 🛠️ Tech Stack
 
@@ -16,29 +22,24 @@ The core aesthetic is **strong contrast** and **clean structure** based on a **1
 | :--- | :--- |
 | **Next.js** | React framework for routing and performance. |
 | **Tailwind CSS** | Utility-first, mobile-first styling. |
-| **Next.js `<Image>`** | Optimized image assets. |
-
-### Layout
-
-Built on a **12-column grid** foundation. Components are highly reusable and mobile-first, adapting smoothly from **stacked** to **split-screen** layouts.
 
 ## 🧩 Key Features
 
 * **Hero:** Bold headline with dual CTAs.
 * **Collection:** Dynamic product cards with alternating layouts.
+* **Brand Story:** Overview of About Us page.
 * **Contact:** Responsive two-column form for quick connection.
 * **Footer:** Clear, structured navigation and social links.
 
-## 🔮 Roadmap
+## 🔮 Future Improvements
 
 1.  Complete **About Us** and **Contact** page content.
-2.  Add micro-animations.
+2.  Add Interactions, micro-animations.
 3.  Implement the full **Modern Standard Arabic** version.
 
 ---
 
 ## 📷 Preview
 <img width="1462" height="851" alt="image" src="https://github.com/user-attachments/assets/00bdee55-aeba-4694-89d9-7e44e742068f" />
-
 <img width="1462" height="853" alt="image" src="https://github.com/user-attachments/assets/42e6e743-520a-4a48-9f55-41aaf592d519" />
 
